@@ -1,5 +1,11 @@
 <RCC>
   <qresource prefix="background.png">
+    <file>main_ring.png</file>
+    <file>quit_btn_1.png</file>
+    <file>quit_btn.png</file>
+    <file>design_ref.png</file>
+    <file>Main_frame.png</file>
+    <file>Button.png</file>
     <file>background.png</file>
   </qresource>
 </RCC>
