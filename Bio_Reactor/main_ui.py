@@ -691,14 +691,6 @@ class Ui_MainWindow(object):
         self.stackedWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
         
-        # Links
-        self.overview_btn.clicked.connect(lambda : self.stackedWidget.setCurrentWidget(self.overview_page))
-        self.heating_btn.clicked.connect(lambda : self.stackedWidget.setCurrentWidget(self.page))
-        self.overview_btn.clicked.connect(lambda : self.stackedWidget.setCurrentWidget(self.overview_page))
-        
-        #Custom quit button
-        self.quit_btn.clicked.connect(lambda : sys.exit())
-
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
