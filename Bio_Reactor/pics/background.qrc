@@ -1,13 +1,20 @@
 <RCC>
   <qresource prefix="background.png">
-    <file>button_selected.png</file>
-    <file>overview_box.png</file>
-    <file>main_ring.png</file>
-    <file>quit_btn_1.png</file>
-    <file>quit_btn.png</file>
-    <file>design_ref.png</file>
-    <file>Main_frame.png</file>
-    <file>Button.png</file>
+    <file>enter_bar_selected.png</file>
+    <file>arrow.png</file>
     <file>background.png</file>
+    <file>Button.png</file>
+    <file>button_selected.png</file>
+    <file>design_ref.png</file>
+    <file>enter_bar.png</file>
+    <file>Main_frame.png</file>
+    <file>main_ring.png</file>
+    <file>overview_box.png</file>
+    <file>quit_btn.png</file>
+    <file>quit_btn_1.png</file>
+    <file>realtimegraph_border.png</file>
+    <file>setpage_Ring.png</file>
+    <file>subpage_general_btn.png</file>
+    <file>subpage_general_btn_pressed.png</file>
   </qresource>
 </RCC>
