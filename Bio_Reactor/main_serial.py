@@ -1,17 +1,19 @@
 import serial
 
 #initial connection
-port_COM = "/dev/pts/2"
+port_COM = "/dev/pts/0"
 serial = serial.Serial(port_COM ,9600)
 
 def getdata():
-    print(serial.read())
-
+    temp = serial.read(6)
+    temp_val = temp.decode('utf-8')
+    return temp_val
 
 
 if __name__ == "__main__":
-    getdata()
+    while True:
+        getdata()
 
-
+    
 
 
