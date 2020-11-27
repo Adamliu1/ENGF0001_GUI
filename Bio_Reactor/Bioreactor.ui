@@ -1635,8 +1635,14 @@ QLineEdit:focus {
 	border-image: url(:/background.png/enter_bar_selected.png);
 }</string>
             </property>
+            <property name="maxLength">
+             <number>5</number>
+            </property>
             <property name="placeholderText">
              <string>Enter Setpoint</string>
+            </property>
+            <property name="clearButtonEnabled">
+             <bool>true</bool>
             </property>
            </widget>
           </widget>
@@ -1665,7 +1671,7 @@ QLineEdit:focus {
        </property>
        <property name="styleSheet">
         <string notr="true">QFrame {
-	border:none
+	border-image:none
 }</string>
        </property>
        <property name="frameShape">

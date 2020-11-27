@@ -687,6 +687,8 @@ class Ui_MainWindow(object):
 "QLineEdit:focus {\n"
 "    border-image: url(:/background.png/enter_bar_selected.png);\n"
 "}")
+        self.tmp_getinput_setpt.setMaxLength(5)
+        self.tmp_getinput_setpt.setClearButtonEnabled(True)
         self.tmp_getinput_setpt.setObjectName("tmp_getinput_setpt")
         self.stackedWidget.addWidget(self.heating_page)
         self.stir_page = QtWidgets.QWidget()
@@ -698,7 +700,7 @@ class Ui_MainWindow(object):
         self.ButtonFrame.setMaximumSize(QtCore.QSize(16777215, 571))
         self.ButtonFrame.setAutoFillBackground(False)
         self.ButtonFrame.setStyleSheet("QFrame {\n"
-"    border:none\n"
+"    border-image:none\n"
 "}")
         self.ButtonFrame.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.ButtonFrame.setFrameShadow(QtWidgets.QFrame.Plain)
