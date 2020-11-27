@@ -105,7 +105,7 @@
            <string notr="true">border-color:none</string>
           </property>
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="overview_page">
            <widget class="QFrame" name="frame">
@@ -126,7 +126,7 @@
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
-            <widget class="QLabel" name="Temperature">
+            <widget class="QLabel" name="Temperature_Label">
              <property name="geometry">
               <rect>
                <x>20</x>
@@ -197,7 +197,7 @@ color: rgb(255, 255, 255);</string>
               <number>0</number>
              </property>
             </widget>
-            <widget class="QLabel" name="Temperature_3">
+            <widget class="QLabel" name="Temperature_Label2">
              <property name="geometry">
               <rect>
                <x>20</x>
@@ -251,7 +251,7 @@ color: rgb(29, 167, 221);</string>
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
-            <widget class="QLabel" name="Temperature_4">
+            <widget class="QLabel" name="Stirring_Label">
              <property name="geometry">
               <rect>
                <x>55</x>
@@ -326,7 +326,7 @@ color: rgb(255, 255, 255);</string>
               <number>0</number>
              </property>
             </widget>
-            <widget class="QLabel" name="Temperature_6">
+            <widget class="QLabel" name="stirring_Label2">
              <property name="geometry">
               <rect>
                <x>20</x>
@@ -380,7 +380,7 @@ color: rgb(29, 167, 221);</string>
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
-            <widget class="QLabel" name="Temperature_7">
+            <widget class="QLabel" name="PH_Label">
              <property name="geometry">
               <rect>
                <x>46</x>
@@ -1298,7 +1298,7 @@ color: rgb(29, 167, 221);</string>
               <number>0</number>
              </property>
             </widget>
-            <widget class="QLabel" name="Temperature_10">
+            <widget class="QLabel" name="Temperature_Value_sub">
              <property name="geometry">
               <rect>
                <x>20</x>
@@ -1426,7 +1426,7 @@ color: rgb(29, 167, 221);</string>
               <number>0</number>
              </property>
             </widget>
-            <widget class="QLabel" name="Temperature_13">
+            <widget class="QLabel" name="Temperature_setpt_sub">
              <property name="geometry">
               <rect>
                <x>20</x>
@@ -1498,7 +1498,7 @@ color: rgb(29, 167, 221);</string>
              </property>
             </widget>
            </widget>
-           <widget class="QPushButton" name="pushButton">
+           <widget class="QPushButton" name="tmp_submit_btn">
             <property name="geometry">
              <rect>
               <x>420</x>
@@ -1532,7 +1532,7 @@ QPushButton:hover {
              <string>Submit</string>
             </property>
            </widget>
-           <widget class="QPushButton" name="pushButton_2">
+           <widget class="QPushButton" name="tmp_restore_btn">
             <property name="geometry">
              <rect>
               <x>20</x>
@@ -1566,7 +1566,7 @@ QPushButton:hover {
              <string>Restore</string>
             </property>
            </widget>
-           <widget class="QFrame" name="frame_9">
+           <widget class="QFrame" name="heating_subframe">
             <property name="geometry">
              <rect>
               <x>10</x>
@@ -1585,66 +1585,6 @@ QPushButton:hover {
              <enum>QFrame::Raised</enum>
             </property>
            </widget>
-           <widget class="QFrame" name="frame_10">
-            <property name="geometry">
-             <rect>
-              <x>60</x>
-              <y>450</y>
-              <width>465</width>
-              <height>41</height>
-             </rect>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QFrame{
-	border-image: url(:/background.png/enter_bar.png);
-}
-
-QFrame:hover {
-	border-image: url(:/background.png/enter_bar_selected.png);
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <widget class="QLabel" name="Temperature_15">
-             <property name="geometry">
-              <rect>
-               <x>10</x>
-               <y>10</y>
-               <width>171</width>
-               <height>21</height>
-              </rect>
-             </property>
-             <property name="font">
-              <font>
-               <family>Arial</family>
-               <pointsize>16</pointsize>
-               <weight>75</weight>
-               <italic>false</italic>
-               <bold>true</bold>
-              </font>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">border-image:none;
-color: rgb(198, 198, 198);</string>
-             </property>
-             <property name="text">
-              <string>Enter setpoint</string>
-             </property>
-             <property name="scaledContents">
-              <bool>false</bool>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-             </property>
-             <property name="margin">
-              <number>0</number>
-             </property>
-            </widget>
-           </widget>
            <widget class="QLabel" name="label_14">
             <property name="geometry">
              <rect>
@@ -1661,8 +1601,46 @@ color: rgb(198, 198, 198);</string>
              <string/>
             </property>
            </widget>
+           <widget class="QLineEdit" name="tmp_getinput_setpt">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>450</y>
+              <width>465</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border-image: url(:/background.png/enter_bar.png);
+	color: rgb(255, 255, 255);
+	padding-left:20px;
+	padding-right: 20px;
+}
+
+QLineEdit:hover {
+
+	border-image: url(:/background.png/enter_bar_selected.png);
+}
+
+QLineEdit:focus {
+	border-image: url(:/background.png/enter_bar_selected.png);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Enter Setpoint</string>
+            </property>
+           </widget>
           </widget>
-          <widget class="QWidget" name="page"/>
+          <widget class="QWidget" name="stir_page"/>
          </widget>
         </item>
        </layout>
@@ -1724,6 +1702,10 @@ color: rgb(198, 198, 198);</string>
 
 QPushButton:hover {
 	border-image: url(:/background.png/button_selected.png);
+}
+
+QPushButton:focus {
+	border-image: url(:/background.png/button_selected.png);
 }</string>
         </property>
         <property name="text">
@@ -1758,6 +1740,10 @@ QPushButton:hover {
 
 QPushButton:hover {
 	border-image: url(:/background.png/button_selected.png);
+}
+
+QPushButton:focus {
+	border-image: url(:/background.png/button_selected.png);
 }</string>
         </property>
         <property name="text">
@@ -1791,6 +1777,10 @@ QPushButton:hover {
 }
 
 QPushButton:hover {
+	border-image: url(:/background.png/button_selected.png);
+}
+
+QPushButton:focus {
 	border-image: url(:/background.png/button_selected.png);
 }</string>
         </property>
@@ -1828,6 +1818,10 @@ QPushButton:hover {
 }
 
 QPushButton:hover {
+	border-image: url(:/background.png/button_selected.png);
+}
+
+QPushButton:focus {
 	border-image: url(:/background.png/button_selected.png);
 }</string>
         </property>

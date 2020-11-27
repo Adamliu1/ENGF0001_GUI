@@ -21,7 +21,6 @@ class Ui_MainWindow(object):
         MainWindow.setAutoFillBackground(False)
         MainWindow.setLocale(QtCore.QLocale(QtCore.QLocale.English, QtCore.QLocale.UnitedKingdom))
         MainWindow.setToolButtonStyle(QtCore.Qt.ToolButtonIconOnly)
-
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
@@ -56,20 +55,20 @@ class Ui_MainWindow(object):
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
-        self.Temperature = QtWidgets.QLabel(self.frame)
-        self.Temperature.setGeometry(QtCore.QRect(20, 30, 141, 31))
+        self.Temperature_Label = QtWidgets.QLabel(self.frame)
+        self.Temperature_Label.setGeometry(QtCore.QRect(20, 30, 141, 31))
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(16)
         font.setBold(True)
         font.setItalic(False)
         font.setWeight(75)
-        self.Temperature.setFont(font)
-        self.Temperature.setStyleSheet("border-image:none;\n"
+        self.Temperature_Label.setFont(font)
+        self.Temperature_Label.setStyleSheet("border-image:none;\n"
 "color: rgb(29, 167, 221);")
-        self.Temperature.setScaledContents(False)
-        self.Temperature.setAlignment(QtCore.Qt.AlignCenter)
-        self.Temperature.setObjectName("Temperature")
+        self.Temperature_Label.setScaledContents(False)
+        self.Temperature_Label.setAlignment(QtCore.Qt.AlignCenter)
+        self.Temperature_Label.setObjectName("Temperature_Label")
         self.Temperature_Value = QtWidgets.QLabel(self.frame)
         self.Temperature_Value.setGeometry(QtCore.QRect(20, 60, 141, 61))
         font = QtGui.QFont()
@@ -85,41 +84,41 @@ class Ui_MainWindow(object):
         self.Temperature_Value.setScaledContents(False)
         self.Temperature_Value.setAlignment(QtCore.Qt.AlignCenter)
         self.Temperature_Value.setObjectName("Temperature_Value")
-        self.Temperature_3 = QtWidgets.QLabel(self.frame)
-        self.Temperature_3.setGeometry(QtCore.QRect(20, 120, 141, 31))
+        self.Temperature_Label2 = QtWidgets.QLabel(self.frame)
+        self.Temperature_Label2.setGeometry(QtCore.QRect(20, 120, 141, 31))
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(16)
         font.setBold(True)
         font.setItalic(False)
         font.setWeight(75)
-        self.Temperature_3.setFont(font)
-        self.Temperature_3.setStyleSheet("border-image:none;\n"
+        self.Temperature_Label2.setFont(font)
+        self.Temperature_Label2.setStyleSheet("border-image:none;\n"
 "color: rgb(29, 167, 221);")
-        self.Temperature_3.setScaledContents(False)
-        self.Temperature_3.setAlignment(QtCore.Qt.AlignCenter)
-        self.Temperature_3.setObjectName("Temperature_3")
+        self.Temperature_Label2.setScaledContents(False)
+        self.Temperature_Label2.setAlignment(QtCore.Qt.AlignCenter)
+        self.Temperature_Label2.setObjectName("Temperature_Label2")
         self.frame_2 = QtWidgets.QFrame(self.overview_page)
         self.frame_2.setGeometry(QtCore.QRect(0, 190, 177, 177))
         self.frame_2.setStyleSheet("border-image: url(:/background.png/main_ring.png);")
         self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_2.setObjectName("frame_2")
-        self.Temperature_4 = QtWidgets.QLabel(self.frame_2)
-        self.Temperature_4.setGeometry(QtCore.QRect(55, 12, 71, 51))
+        self.Stirring_Label = QtWidgets.QLabel(self.frame_2)
+        self.Stirring_Label.setGeometry(QtCore.QRect(55, 12, 71, 51))
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(16)
         font.setBold(True)
         font.setItalic(False)
         font.setWeight(75)
-        self.Temperature_4.setFont(font)
-        self.Temperature_4.setStyleSheet("border-image:none;\n"
+        self.Stirring_Label.setFont(font)
+        self.Stirring_Label.setStyleSheet("border-image:none;\n"
 "color: rgb(29, 167, 221);")
-        self.Temperature_4.setScaledContents(False)
-        self.Temperature_4.setAlignment(QtCore.Qt.AlignCenter)
-        self.Temperature_4.setWordWrap(False)
-        self.Temperature_4.setObjectName("Temperature_4")
+        self.Stirring_Label.setScaledContents(False)
+        self.Stirring_Label.setAlignment(QtCore.Qt.AlignCenter)
+        self.Stirring_Label.setWordWrap(False)
+        self.Stirring_Label.setObjectName("Stirring_Label")
         self.motor_value = QtWidgets.QLabel(self.frame_2)
         self.motor_value.setGeometry(QtCore.QRect(20, 60, 141, 61))
         font = QtGui.QFont()
@@ -135,41 +134,41 @@ class Ui_MainWindow(object):
         self.motor_value.setScaledContents(False)
         self.motor_value.setAlignment(QtCore.Qt.AlignCenter)
         self.motor_value.setObjectName("motor_value")
-        self.Temperature_6 = QtWidgets.QLabel(self.frame_2)
-        self.Temperature_6.setGeometry(QtCore.QRect(20, 120, 141, 31))
+        self.stirring_Label2 = QtWidgets.QLabel(self.frame_2)
+        self.stirring_Label2.setGeometry(QtCore.QRect(20, 120, 141, 31))
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(16)
         font.setBold(True)
         font.setItalic(False)
         font.setWeight(75)
-        self.Temperature_6.setFont(font)
-        self.Temperature_6.setStyleSheet("border-image:none;\n"
+        self.stirring_Label2.setFont(font)
+        self.stirring_Label2.setStyleSheet("border-image:none;\n"
 "color: rgb(29, 167, 221);")
-        self.Temperature_6.setScaledContents(False)
-        self.Temperature_6.setAlignment(QtCore.Qt.AlignCenter)
-        self.Temperature_6.setObjectName("Temperature_6")
+        self.stirring_Label2.setScaledContents(False)
+        self.stirring_Label2.setAlignment(QtCore.Qt.AlignCenter)
+        self.stirring_Label2.setObjectName("stirring_Label2")
         self.frame_3 = QtWidgets.QFrame(self.overview_page)
         self.frame_3.setGeometry(QtCore.QRect(0, 375, 177, 177))
         self.frame_3.setStyleSheet("border-image: url(:/background.png/main_ring.png);")
         self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_3.setObjectName("frame_3")
-        self.Temperature_7 = QtWidgets.QLabel(self.frame_3)
-        self.Temperature_7.setGeometry(QtCore.QRect(46, 21, 91, 41))
+        self.PH_Label = QtWidgets.QLabel(self.frame_3)
+        self.PH_Label.setGeometry(QtCore.QRect(46, 21, 91, 41))
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(16)
         font.setBold(True)
         font.setItalic(False)
         font.setWeight(75)
-        self.Temperature_7.setFont(font)
-        self.Temperature_7.setStyleSheet("border-image:none;\n"
+        self.PH_Label.setFont(font)
+        self.PH_Label.setStyleSheet("border-image:none;\n"
 "color: rgb(29, 167, 221);")
-        self.Temperature_7.setScaledContents(False)
-        self.Temperature_7.setAlignment(QtCore.Qt.AlignCenter)
-        self.Temperature_7.setWordWrap(False)
-        self.Temperature_7.setObjectName("Temperature_7")
+        self.PH_Label.setScaledContents(False)
+        self.PH_Label.setAlignment(QtCore.Qt.AlignCenter)
+        self.PH_Label.setWordWrap(False)
+        self.PH_Label.setObjectName("PH_Label")
         self.ph_value = QtWidgets.QLabel(self.frame_3)
         self.ph_value.setGeometry(QtCore.QRect(19, 60, 141, 61))
         font = QtGui.QFont()
@@ -520,8 +519,8 @@ class Ui_MainWindow(object):
         self.heating_page.setObjectName("heating_page")
         self.frame_7 = QtWidgets.QFrame(self.heating_page)
         self.frame_7.setEnabled(True)
-        self.frame_7.setGeometry(QtCore.QRect(200, 30, 181, 181))
-        self.frame_7.setStyleSheet("border-image: url(:/background.png/main_ring.png);")
+        self.frame_7.setGeometry(QtCore.QRect(40, 10, 181, 181))
+        self.frame_7.setStyleSheet("border-image: url(:/background.png/setpage_Ring.png);")
         self.frame_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_7.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_7.setObjectName("frame_7")
@@ -539,21 +538,21 @@ class Ui_MainWindow(object):
         self.Temperature_9.setScaledContents(False)
         self.Temperature_9.setAlignment(QtCore.Qt.AlignCenter)
         self.Temperature_9.setObjectName("Temperature_9")
-        self.Temperature_10 = QtWidgets.QLabel(self.frame_7)
-        self.Temperature_10.setGeometry(QtCore.QRect(20, 60, 141, 61))
+        self.Temperature_Value_sub = QtWidgets.QLabel(self.frame_7)
+        self.Temperature_Value_sub.setGeometry(QtCore.QRect(20, 60, 141, 61))
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(42)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(9)
-        self.Temperature_10.setFont(font)
-        self.Temperature_10.setStyleSheet("border-image:none;\n"
+        self.Temperature_Value_sub.setFont(font)
+        self.Temperature_Value_sub.setStyleSheet("border-image:none;\n"
 "font: 75 42pt \"Arial\";\n"
 "color: rgb(255, 255, 255);")
-        self.Temperature_10.setScaledContents(False)
-        self.Temperature_10.setAlignment(QtCore.Qt.AlignCenter)
-        self.Temperature_10.setObjectName("Temperature_10")
+        self.Temperature_Value_sub.setScaledContents(False)
+        self.Temperature_Value_sub.setAlignment(QtCore.Qt.AlignCenter)
+        self.Temperature_Value_sub.setObjectName("Temperature_Value_sub")
         self.Temperature_11 = QtWidgets.QLabel(self.frame_7)
         self.Temperature_11.setGeometry(QtCore.QRect(20, 120, 141, 31))
         font = QtGui.QFont()
@@ -568,10 +567,131 @@ class Ui_MainWindow(object):
         self.Temperature_11.setScaledContents(False)
         self.Temperature_11.setAlignment(QtCore.Qt.AlignCenter)
         self.Temperature_11.setObjectName("Temperature_11")
+        self.frame_8 = QtWidgets.QFrame(self.heating_page)
+        self.frame_8.setEnabled(True)
+        self.frame_8.setGeometry(QtCore.QRect(350, 10, 181, 181))
+        self.frame_8.setStyleSheet("border-image: url(:/background.png/setpage_Ring.png);")
+        self.frame_8.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_8.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_8.setObjectName("frame_8")
+        self.Temperature_12 = QtWidgets.QLabel(self.frame_8)
+        self.Temperature_12.setGeometry(QtCore.QRect(20, 30, 141, 31))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(16)
+        font.setBold(True)
+        font.setItalic(False)
+        font.setWeight(75)
+        self.Temperature_12.setFont(font)
+        self.Temperature_12.setStyleSheet("border-image:none;\n"
+"color: rgb(29, 167, 221);")
+        self.Temperature_12.setScaledContents(False)
+        self.Temperature_12.setAlignment(QtCore.Qt.AlignCenter)
+        self.Temperature_12.setObjectName("Temperature_12")
+        self.Temperature_setpt_sub = QtWidgets.QLabel(self.frame_8)
+        self.Temperature_setpt_sub.setGeometry(QtCore.QRect(20, 60, 141, 61))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(42)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(9)
+        self.Temperature_setpt_sub.setFont(font)
+        self.Temperature_setpt_sub.setStyleSheet("border-image:none;\n"
+"font: 75 42pt \"Arial\";\n"
+"color: rgb(255, 255, 255);")
+        self.Temperature_setpt_sub.setScaledContents(False)
+        self.Temperature_setpt_sub.setAlignment(QtCore.Qt.AlignCenter)
+        self.Temperature_setpt_sub.setObjectName("Temperature_setpt_sub")
+        self.Temperature_14 = QtWidgets.QLabel(self.frame_8)
+        self.Temperature_14.setGeometry(QtCore.QRect(20, 120, 141, 31))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(16)
+        font.setBold(True)
+        font.setItalic(False)
+        font.setWeight(75)
+        self.Temperature_14.setFont(font)
+        self.Temperature_14.setStyleSheet("border-image:none;\n"
+"color: rgb(29, 167, 221);")
+        self.Temperature_14.setScaledContents(False)
+        self.Temperature_14.setAlignment(QtCore.Qt.AlignCenter)
+        self.Temperature_14.setObjectName("Temperature_14")
+        self.tmp_submit_btn = QtWidgets.QPushButton(self.heating_page)
+        self.tmp_submit_btn.setGeometry(QtCore.QRect(420, 510, 143, 41))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(16)
+        font.setBold(True)
+        font.setWeight(75)
+        self.tmp_submit_btn.setFont(font)
+        self.tmp_submit_btn.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
+        self.tmp_submit_btn.setStyleSheet("QPushButton {\n"
+"    border-image: url(:/background.png/subpage_general_btn.png);\n"
+"    color: rgb(198, 198, 198);\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    border-image: url(:/background.png/subpage_general_btn_pressed.png);\n"
+"}")
+        self.tmp_submit_btn.setObjectName("tmp_submit_btn")
+        self.tmp_restore_btn = QtWidgets.QPushButton(self.heating_page)
+        self.tmp_restore_btn.setGeometry(QtCore.QRect(20, 510, 143, 41))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(16)
+        font.setBold(True)
+        font.setWeight(75)
+        self.tmp_restore_btn.setFont(font)
+        self.tmp_restore_btn.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
+        self.tmp_restore_btn.setStyleSheet("QPushButton {\n"
+"    border-image: url(:/background.png/subpage_general_btn.png);\n"
+"    color: rgb(198, 198, 198);\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    border-image: url(:/background.png/subpage_general_btn_pressed.png);\n"
+"}")
+        self.tmp_restore_btn.setObjectName("tmp_restore_btn")
+        self.heating_subframe = QtWidgets.QFrame(self.heating_page)
+        self.heating_subframe.setGeometry(QtCore.QRect(10, 210, 568, 214))
+        self.heating_subframe.setStyleSheet("border-image: url(:/background.png/realtimegraph_border.png);")
+        self.heating_subframe.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.heating_subframe.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.heating_subframe.setObjectName("heating_subframe")
+        self.label_14 = QtWidgets.QLabel(self.heating_page)
+        self.label_14.setGeometry(QtCore.QRect(250, 80, 60, 37))
+        self.label_14.setStyleSheet("border-image: url(:/background.png/arrow.png);")
+        self.label_14.setText("")
+        self.label_14.setObjectName("label_14")
+        self.tmp_getinput_setpt = QtWidgets.QLineEdit(self.heating_page)
+        self.tmp_getinput_setpt.setGeometry(QtCore.QRect(60, 450, 465, 41))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(16)
+        font.setBold(True)
+        font.setWeight(75)
+        self.tmp_getinput_setpt.setFont(font)
+        self.tmp_getinput_setpt.setStyleSheet("QLineEdit {\n"
+"    border-image: url(:/background.png/enter_bar.png);\n"
+"    color: rgb(255, 255, 255);\n"
+"    padding-left:20px;\n"
+"    padding-right: 20px;\n"
+"}\n"
+"\n"
+"QLineEdit:hover {\n"
+"\n"
+"    border-image: url(:/background.png/enter_bar_selected.png);\n"
+"}\n"
+"\n"
+"QLineEdit:focus {\n"
+"    border-image: url(:/background.png/enter_bar_selected.png);\n"
+"}")
+        self.tmp_getinput_setpt.setObjectName("tmp_getinput_setpt")
         self.stackedWidget.addWidget(self.heating_page)
-        self.page = QtWidgets.QWidget()
-        self.page.setObjectName("page")
-        self.stackedWidget.addWidget(self.page)
+        self.stir_page = QtWidgets.QWidget()
+        self.stir_page.setObjectName("stir_page")
+        self.stackedWidget.addWidget(self.stir_page)
         self.verticalLayout_2.addWidget(self.stackedWidget)
         self.ButtonFrame = QtWidgets.QFrame(self.MainFrame)
         self.ButtonFrame.setGeometry(QtCore.QRect(10, 20, 161, 291))
@@ -599,6 +719,10 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:hover {\n"
 "    border-image: url(:/background.png/button_selected.png);\n"
+"}\n"
+"\n"
+"QPushButton:focus {\n"
+"    border-image: url(:/background.png/button_selected.png);\n"
 "}")
         self.overview_btn.setFlat(False)
         self.overview_btn.setObjectName("overview_btn")
@@ -617,6 +741,10 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:hover {\n"
 "    border-image: url(:/background.png/button_selected.png);\n"
+"}\n"
+"\n"
+"QPushButton:focus {\n"
+"    border-image: url(:/background.png/button_selected.png);\n"
 "}")
         self.heating_btn.setFlat(False)
         self.heating_btn.setObjectName("heating_btn")
@@ -634,6 +762,10 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton:hover {\n"
+"    border-image: url(:/background.png/button_selected.png);\n"
+"}\n"
+"\n"
+"QPushButton:focus {\n"
 "    border-image: url(:/background.png/button_selected.png);\n"
 "}")
         self.stirring_btn.setFlat(False)
@@ -655,6 +787,10 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton:hover {\n"
+"    border-image: url(:/background.png/button_selected.png);\n"
+"}\n"
+"\n"
+"QPushButton:focus {\n"
 "    border-image: url(:/background.png/button_selected.png);\n"
 "}")
         self.ph_btn.setFlat(False)
@@ -690,18 +826,18 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         self.stackedWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
-        
+
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.Temperature.setText(_translate("MainWindow", "Temperature"))
+        self.Temperature_Label.setText(_translate("MainWindow", "Temperature"))
         self.Temperature_Value.setText(_translate("MainWindow", "-.-"))
-        self.Temperature_3.setText(_translate("MainWindow", "Celsius"))
-        self.Temperature_4.setText(_translate("MainWindow", "Stirring\n"
+        self.Temperature_Label2.setText(_translate("MainWindow", "Celsius"))
+        self.Stirring_Label.setText(_translate("MainWindow", "Stirring\n"
 "Motor"))
         self.motor_value.setText(_translate("MainWindow", "-.-"))
-        self.Temperature_6.setText(_translate("MainWindow", "RPM"))
-        self.Temperature_7.setText(_translate("MainWindow", "PH Value"))
+        self.stirring_Label2.setText(_translate("MainWindow", "RPM"))
+        self.PH_Label.setText(_translate("MainWindow", "PH Value"))
         self.ph_value.setText(_translate("MainWindow", "-.-"))
         self.label_2.setText(_translate("MainWindow", "PWM status:"))
         self.label_3.setText(_translate("MainWindow", "PWM Output voltage:"))
@@ -730,8 +866,14 @@ class Ui_MainWindow(object):
         self.ph_PWM_vol.setText(_translate("MainWindow", "N/A"))
         self.ph_setpoint_val.setText(_translate("MainWindow", "N/A"))
         self.Temperature_9.setText(_translate("MainWindow", "Temperature"))
-        self.Temperature_10.setText(_translate("MainWindow", "-.-"))
+        self.Temperature_Value_sub.setText(_translate("MainWindow", "-.-"))
         self.Temperature_11.setText(_translate("MainWindow", "Celsius"))
+        self.Temperature_12.setText(_translate("MainWindow", "SetPoint"))
+        self.Temperature_setpt_sub.setText(_translate("MainWindow", "-.-"))
+        self.Temperature_14.setText(_translate("MainWindow", "Celsius"))
+        self.tmp_submit_btn.setText(_translate("MainWindow", "Submit"))
+        self.tmp_restore_btn.setText(_translate("MainWindow", "Restore"))
+        self.tmp_getinput_setpt.setPlaceholderText(_translate("MainWindow", "Enter Setpoint"))
         self.overview_btn.setText(_translate("MainWindow", "Overview"))
         self.heating_btn.setText(_translate("MainWindow", "Heating"))
         self.stirring_btn.setText(_translate("MainWindow", "Stirring"))
@@ -740,17 +882,11 @@ class Ui_MainWindow(object):
 import background_rc
 
 
-
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
-
-    # REMOVE TITLE BAR
-    MainWindow.setWindowFlag(QtCore.Qt.FramelessWindowHint)
-    MainWindow.setAttribute(QtCore.Qt.WA_TranslucentBackground)
-
     MainWindow.show()
     sys.exit(app.exec_())

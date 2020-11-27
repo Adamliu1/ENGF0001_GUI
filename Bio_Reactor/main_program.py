@@ -13,8 +13,8 @@ class myWindow(QMainWindow, Ui_MainWindow):
 
         # Links
         self.overview_btn.clicked.connect(lambda : self.stackedWidget.setCurrentWidget(self.overview_page))
-        self.heating_btn.clicked.connect(lambda : self.stackedWidget.setCurrentWidget(self.page))
-        self.overview_btn.clicked.connect(lambda : self.stackedWidget.setCurrentWidget(self.overview_page))
+        self.heating_btn.clicked.connect(lambda : self.stackedWidget.setCurrentWidget(self.heating_page))
+        #self.overview_btn.clicked.connect(lambda : self.stackedWidget.setCurrentWidget(self.overview_page))
         
         #Custom quit button
         self.quit_btn.clicked.connect(lambda : sys.exit())
